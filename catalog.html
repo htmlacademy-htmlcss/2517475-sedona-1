@@ -43,14 +43,14 @@
     <main>
       <header class="main-inner">
         <h1>Гостиницы Седоны</h1>
-        <ul class="breadcrumbs">
+        <ol class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link visually-hidden" href="index.html">Главная страница</a>
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">Гостиницы</a>
           </li>
-        </ul>
+        </ol>
         <form>
           <fieldset class="infrastructure">
             <legend class="infrastructure-name">Инфраструктура:</legend>
@@ -101,12 +101,14 @@
             </ul>
           </fieldset>
         </form>
-        <!--Тут еще нужен фильтр по стоимости и кнопки "применить"/"сбросить"-->
+
       </header>
       <section class="hotels_filter">
         <h2 class="visually-hidden">Результат</h2>
         <div>
-          <b>Найдено гостиниц: 38</b>
+          <p><b>Найдено гостиниц:
+            <span>38</span>
+          </b></p>
           <select class="hotels_filter-price" aria-label="Сортировка">
             <option value="popular">Сначала популярное</option>
             <option value="cheap">Сначала дешевые</option>
@@ -131,45 +133,45 @@
           </li>
           <li class="hotels_filter-item">
             <img src="#" alt="Amara Resort & Spa">
-            <h3>Amara Resort & Spa</h3>
+            <h3>Villas at Poco Diablo</h3>
             <p>
               Гостиница
-              От 4000 ₽
+              От 5000 ₽
             </p>
             <a class="hotels_filter-link button" href="#">подробнее</a>
-            <button class="hotels_filter-favourites">в избранное</button>
+            <button class="hotels_filter-favourites">в избранном</button>
             <img class="rating-star visually-hidden" src="#" alt="рейтинг">
-            <span class="rating">Рейтинг: 8,5</span>
+            <span class="rating">Рейтинг: 9,2</span>
           </li>
           <li class="hotels_filter-item">
             <img src="#" alt="Amara Resort & Spa">
-            <h3>Amara Resort & Spa</h3>
+            <h3>Desert Quail Inn</h3>
             <p>
               Гостиница
-              От 4000 ₽
+              От 2500 ₽
             </p>
             <a class="hotels_filter-link button" href="#">подробнее</a>
             <button class="hotels_filter-favourites">в избранное</button>
             <img class="rating-star visually-hidden" src="#" alt="рейтинг">
-            <span class="rating">Рейтинг: 8,5</span>
+            <span class="rating">Рейтинг: 6,9</span>
           </li>
           <li class="hotels_filter-item">
             <img src="#" alt="Amara Resort & Spa">
-            <h3>Amara Resort & Spa</h3>
+            <h3>GreenTree Inn</h3>
             <p>
               Гостиница
-              От 4000 ₽
+              От 1500 ₽
             </p>
             <a class="hotels_filter-link button" href="#">подробнее</a>
             <button class="hotels_filter-favourites">в избранное</button>
             <img class="rating-star visually-hidden" src="#" alt="рейтинг">
-            <span class="rating">Рейтинг: 8,5</span>
+            <span class="rating">Рейтинг: 5,0</span>
           </li>
         </ul>
       </section>
       <section class="pagination">
         <h2 class="visually-hidden">Навигация по страницам</h2>
-        <ul class="pagination-list">
+        <ol class="pagination-list">
           <li class="pagination-item">
             <a class="pagination-link">1</a>
           </li>
@@ -188,11 +190,9 @@
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
           </li>
-        </ul>
+        </ol>
       </section>
-    </main>
 
-    <footer>
       <section class="mailing">
         <h2 class="visually-hidden">Подписка</h2>
         <p><b>Подпишитесь на рассылку</b></p>
@@ -204,31 +204,33 @@
         </p>
         <button class="mailing-button">Подписаться</button>
       </section>
+    </main>
 
-      <ul class="social_media-list">
-        <li class="social_media-item">
-          <a class="social_media-link" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">ВКонтакте</span>
-          </a>
-          <img class="social_media" src="#" alt="ВКонтакте">
-        </li>
-        <li class="social_media-item">
-          <a class="social_media-link" href="https://t.me/htmlacademy">
-            <span class="visually-hidden">Telegram</span>
-          </a>
-          <img class="social_media" src="#" alt="Telegram">
-        </li>
-        <li class="social_media-item">
-          <a class="social_media-link" href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually-hidden">YouTube</span>
-          </a>
-          <img class="social_media" src="#" alt="YouTube">
-        </li>
-      </ul>
-      <p>
-        <a class="contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
-      </p>
-      <img class="htmlacademy" src="https://htmlacademy.ru/" alt="Логотип академии">
-    </footer>
-  </body>
+    <footer>
+    <ul class="social_media-list">
+      <li class="social_media-item">
+        <a class="social_media-link" href="https://vk.com/htmlacademy">
+          <span class="visually-hidden">ВКонтакте</span>
+        </a>
+        <img class="social_media" src="#" alt="ВКонтакте">
+      </li>
+      <li class="social_media-item">
+        <a class="social_media-link" href="https://t.me/htmlacademy">
+          <span class="visually-hidden">Telegram</span>
+        </a>
+        <img class="social_media" src="#" alt="Telegram">
+      </li>
+      <li class="social_media-item">
+        <a class="social_media-link" href="https://www.youtube.com/user/htmlacademyru">
+          <span class="visually-hidden">YouTube</span>
+        </a>
+        <img class="social_media" src="#" alt="YouTube">
+      </li>
+    </ul>
+    <p>
+      <a class="contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
+    </p>
+    <img class="htmlacademy" src="https://htmlacademy.ru/" alt="Логотип академии">
+  </footer>
+</body>
 </html>
