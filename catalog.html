@@ -51,65 +51,69 @@
             <a class="breadcrumbs-link">Гостиницы</a>
           </li>
         </ul>
-        <fieldset class="infrastructure">
-          <legend class="infrastructure-name">Инфраструктура:</legend>
-          <ul class="infrastructure-list">
-            <li class="infrastructure-item">
-              <label class="control">
-                <input class="control-input" type="checkbox">
-                Бассейн
-              </label>
-            </li>
-            <li class="infrastructure-item">
-              <label class="control">
-                <input class="control-input" type="checkbox">
-                Парковка
-              </label>
-            </li>
-            <li class="infrastructure-item">
-              <label class="control">
-                <input class="control-input" type="checkbox">
-                Wi-Fi
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="house">
-          <legend class="house-name">Тип Жилья:</legend>
-          <ul class="house-list">
-            <li class="house-item">
-              <label class="control">
-                <input class="control-input" type="radio">
-                Гостиница
-              </label>
-            </li>
-            <li class="infrastructure-item">
-              <label class="control">
-                <input class="control-input" type="radio">
-                Мотель
-              </label>
-            </li>
-            <li class="infrastructure-item">
-              <label class="control">
-                <input class="control-input" type="radio">
-                Апартаменты
-              </label>
-            </li>
-          </ul>
-        </fieldset>
+        <form>
+          <fieldset class="infrastructure">
+            <legend class="infrastructure-name">Инфраструктура:</legend>
+            <ul class="infrastructure-list">
+              <li class="infrastructure-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="swimming_pool" checked>
+                  Бассейн
+                </label>
+              </li>
+              <li class="infrastructure-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="parking" checked>
+                  Парковка
+                </label>
+              </li>
+              <li class="infrastructure-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="wifi">
+                  Wi-Fi
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </form>
+        <form>
+          <fieldset class="house">
+            <legend class="house-name">Тип Жилья:</legend>
+            <ul class="house-list">
+              <li class="house-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="house-group" checked>
+                  Гостиница
+                </label>
+              </li>
+              <li class="infrastructure-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="house-group">
+                  Мотель
+                </label>
+              </li>
+              <li class="infrastructure-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="house-group">
+                  Апартаменты
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </form>
         <!--Тут еще нужен фильтр по стоимости и кнопки "применить"/"сбросить"-->
       </header>
       <section class="hotels_filter">
         <h2 class="visually-hidden">Результат</h2>
         <div>
           <b>Найдено гостиниц: 38</b>
-          <select class="hotels_filter-price">
+          <select class="hotels_filter-price" aria-label="Сортировка">
             <option value="popular">Сначала популярное</option>
             <option value="cheap">Сначала дешевые</option>
             <option value="expensive">Сначала дорогие</option>
           </select>
           <a class="visually-hidden button-filter">Плитка</a>
-          <a class="visually-hidden button-filter">Хз что это</a>
+          <a class="visually-hidden button-filter">Лента</a>
           <a class="visually-hidden button-filter">Список</a>
         </div>
         <ul class="hotels_filter-list">
@@ -166,22 +170,22 @@
       <section class="pagination">
         <h2 class="visually-hidden">Навигация по страницам</h2>
         <ul class="pagination-list">
-          <li class="pagination-item-1">
+          <li class="pagination-item">
             <a class="pagination-link">1</a>
           </li>
-          <li class="pagination-item-2">
+          <li class="pagination-item">
             <a class="pagination-link" href="#">2</a>
           </li>
-          <li class="pagination-item-3">
+          <li class="pagination-item">
             <a class="pagination-link" href="#">3</a>
           </li>
-          <li class="pagination-item-4">
+          <li class="pagination-item">
             <a class="pagination-link" href="#">4</a>
           </li>
-          <li class="pagination-item-...">
-            <a class="pagination-link" href="#">...</a>
+          <li class="pagination-item">
+            <a class="pagination-link pagination-next visually-hidden" href="#">раскрыть страницы</a>
           </li>
-          <li class="pagination-item-10">
+          <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
           </li>
         </ul>
