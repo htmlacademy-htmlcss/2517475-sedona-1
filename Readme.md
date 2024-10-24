@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Диана Овчинникова](https://up.htmlacademy.ru/htmlcss-individual/1/user/2517475).
-* Наставник: [Анна Лисененкова](https://github.com/Ankhena).
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
